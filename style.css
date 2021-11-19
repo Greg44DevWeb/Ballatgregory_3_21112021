@@ -92,40 +92,169 @@ a {
 }
 
 .process {
-  width: 100%;
+  min-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* Heading panel*/
+  /* buttons display*/
 }
 .process__heading {
-  min-width: 350px;
+  min-width: auto;
 }
 .process__container {
-  width: auto;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .process__step {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 50px;
   margin-bottom: 20px;
-  width: 250px;
+  max-width: 250px;
   padding-right: 70px;
   border-radius: 15px;
   box-shadow: 2px 4px 8px #b1afaf;
   cursor: pointer;
-  width: 100%;
+  position: relative;
+  justify-content: flex-start;
 }
 .process__step:hover {
   background: #f2eafb;
   opacity: 0.8;
   transition: 0.3s ease-in;
   box-shadow: 2px 5px 10px grey;
+}
+.process__level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  transform: translateX(-50%);
+  overflow: visible;
+}
+.process__icon {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #b1afaf;
+  margin: 0 15px;
+  font-size: 1.2em;
+}
+.process__content {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* restaurants section */
+.restaurant {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  /* background-color:blueviolet ;*/
+}
+.restaurant__wrapper {
+  margin: 0 auto;
+  width: auto;
+  height: 100%;
+  /*   background-color: yellowgreen;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurant__container {
+  display: grid;
+  grid-template-columns: 350px;
+  grid-row-gap: 20px;
+}
+.restaurant__link {
+  margin: 15px 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 2px 4px 8px #b1afaf;
+}
+.restaurant__card {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+.restaurant__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurant__description {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.restaurant__identity {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+.restaurant__name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+.restaurant__location {
+  margin: 0;
+}
+.restaurant__like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+.restaurant__like .empty {
+  max-width: 23px;
+  position: absolute;
+  stroke: black;
+  fill: white;
+}
+.restaurant__like .full {
+  max-width: 25px;
+  overflow: hidden;
+  position: relative;
+  fill: url(#fill-heart);
+  opacity: 0;
+}
+.restaurant__like .full:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
