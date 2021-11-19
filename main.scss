@@ -1,0 +1,168 @@
+/* VARIABLES */
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiaty: #99E2D0;
+$color-text: rgb(177, 175, 175);
+$background-section:lighten($color: rgb(223, 223, 223), $amount: 10);
+$background-gradient:linear-gradient( 160deg,rgb(255, 121, 218),rgb(147, 86, 220));
+$btn-shadow: 2px 4px 8px $color-text;
+
+/* MIXINS */
+@mixin flex-format {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-bold {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@mixin btn-gradient {
+    margin:20px 0;
+    border-radius: 30px;
+    width: auto;
+    padding:0 20px;
+    height: 40px;
+    border:none;
+    background:$background-gradient;
+    box-shadow: $btn-shadow;
+        &:hover {
+            opacity:0.80;
+            cursor:pointer; 
+            box-shadow:3px 3px 7px  grey;
+            transition:0.3s;   
+        }  
+}
+
+@mixin panel-button {
+    @include flex-format;
+        height: 50px;
+        margin-bottom: 20px;
+        width: 250px;
+        padding-right: 70px;
+        border-radius: 15px;
+        box-shadow: $btn-shadow;
+        cursor:pointer;
+        &:hover {
+            background: lighten($color: $primary, $amount: 35%);
+            opacity:0.8;
+            transition:0.3s ease-in;
+            box-shadow:2px 5px 10px grey;
+            
+        }
+}
+@mixin btn-number {
+    @include flex-format;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $primary;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: -250px;
+    position:absolute;
+    overflow: visible;
+}
+
+@mixin process-icon {
+    width: 30px;
+    @include flex-format;
+    position:relative;
+    color:$color-text;
+    margin:0 15px;
+    font-size: 1.2em;
+}
+
+
+/* GENERAL RULES*/
+body {
+    box-sizing: border-box;
+    margin:0 ;
+    overflow-x: hidden;
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+.header {
+    margin:0 auto;
+    width: 100%;
+    height: auto;
+    border-bottom : 1px solid rgb(202, 202, 202);
+    box-shadow: 0px 3px 10px rgb(200, 199, 199);
+    @include flex-format;
+         & img {
+            transform:scale(0.5);}       
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    
+        &_localisation  {
+            height: auto;
+            margin:0 auto;
+            width: 120px;
+            @include flex-format;
+            justify-content: space-between;
+            @include text-bold; 
+        }   
+            
+}
+.discovery {
+    height: auto;
+    margin-top: 200px;
+    margin:0 auto;
+    @include flex-format;
+    background-color:$background-section ;
+    flex-direction: column;
+    text-align: center;
+        &__heading {
+            margin:30px 120px 10px 120px;           
+        }
+        &__secondary {
+            color:lighten($color: #000000, $amount: 40);
+            margin:0 100px;
+        }      
+}
+/* gradient "explore" button */
+.discovery
+   button {
+    @include btn-gradient;
+    color:white;
+} 
+
+/* process panel */
+.process__wrapper {
+    width: 100%;
+    background-color:white;
+    @include flex-format;
+}
+.process {
+    width: 100%;
+    @include flex-format;
+    flex-direction: column;
+
+        &__heading {
+            min-width: 350px;   
+        }
+
+        &__container {
+            width: auto;
+             @include flex-format;
+            flex-direction: column;
+    }
+        &__step {
+            @include panel-button;
+            width: 100%;
+        }
+}
+

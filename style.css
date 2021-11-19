@@ -1,0 +1,131 @@
+/* VARIABLES */
+/* MIXINS */
+/* GENERAL RULES*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #cacaca;
+  box-shadow: 0px 3px 10px #c8c7c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header img {
+  transform: scale(0.5);
+}
+
+.main {
+  width: 100%;
+  height: auto;
+}
+.main_localisation {
+  height: auto;
+  margin: 0 auto;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.discovery {
+  height: auto;
+  margin-top: 200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  text-align: center;
+}
+.discovery__heading {
+  margin: 30px 120px 10px 120px;
+}
+.discovery__secondary {
+  color: #666666;
+  margin: 0 100px;
+}
+
+/* gradient "explore" button */
+.discovery button {
+  margin: 20px 0;
+  border-radius: 30px;
+  width: auto;
+  padding: 0 20px;
+  height: 40px;
+  border: none;
+  background: linear-gradient(160deg, #ff79da, #9356dc);
+  box-shadow: 2px 4px 8px #b1afaf;
+  color: white;
+}
+.discovery button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 3px 3px 7px grey;
+  transition: 0.3s;
+}
+
+/* process panel */
+.process__wrapper {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.process {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.process__heading {
+  min-width: 350px;
+}
+.process__container {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.process__step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+  width: 250px;
+  padding-right: 70px;
+  border-radius: 15px;
+  box-shadow: 2px 4px 8px #b1afaf;
+  cursor: pointer;
+  width: 100%;
+}
+.process__step:hover {
+  background: #f2eafb;
+  opacity: 0.8;
+  transition: 0.3s ease-in;
+  box-shadow: 2px 5px 10px grey;
+}
+
+/*# sourceMappingURL=style.css.map */
