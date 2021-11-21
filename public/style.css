@@ -1,3 +1,10 @@
+/*@import './vendors/';
+@import './utils/variables.scss';
+@import './bases/';
+@import './layout';
+@import './pages/';
+@import './components/';
+@import './themes/';*/
 /* VARIABLES */
 /* MIXINS */
 /* GENERAL RULES*/
@@ -14,6 +21,12 @@ a {
   color: black;
 }
 
+/*Text Uppercase Necessity*/
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Logo */
 .header {
   margin: 0 auto;
   width: 100%;
@@ -28,9 +41,11 @@ a {
   transform: scale(0.5);
 }
 
+/* MAIN CONTENT */
 .main {
   width: 100%;
   height: auto;
+  /* Section including "Explore" button */
 }
 .main_localisation {
   height: auto;
@@ -82,6 +97,7 @@ a {
   transition: 0.3s;
 }
 
+/* PROCESS SECTION*/
 /* process panel */
 .process__wrapper {
   width: 100%;
@@ -98,7 +114,7 @@ a {
   align-items: center;
   flex-direction: column;
   /* Heading panel*/
-  /* buttons display*/
+  /* Process panel buttons display*/
 }
 .process__heading {
   min-width: auto;
@@ -164,18 +180,23 @@ a {
   font-size: 16px;
 }
 
-/* restaurants section */
+/* RESTAURANT SECTION */
 .restaurant {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  /* background-color:blueviolet ;*/
+  /* Restaurant card link */
+  /* "new" box display */
+  /* restaurant Identy Card */
+  /* Identity Restaurant formatting */
+  /* First line with the bold-style name */
+  /* Second line with the locality*/
+  /* "Like" section */
 }
 .restaurant__wrapper {
   margin: 0 auto;
   width: auto;
   height: 100%;
-  /*   background-color: yellowgreen;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,6 +215,19 @@ a {
   border-radius: 20px;
   box-shadow: 2px 4px 8px #b1afaf;
 }
+.restaurant__new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100px;
+  height: 35px;
+  position: absolute;
+  transform: translateX(225%);
+  background-color: #99E2D0;
+  color: #32b091;
+  font-weight: bold;
+}
 .restaurant__card {
   margin-bottom: 20px;
   display: flex;
@@ -203,7 +237,7 @@ a {
 }
 .restaurant__card img {
   width: 100%;
-  height: 100%;
+  max-height: 220px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -237,7 +271,7 @@ a {
   align-items: center;
   width: 30px;
   padding-right: 20px;
-  overflow: hidden;
+  /* Heart animation on hover */
 }
 .restaurant__like .empty {
   max-width: 23px;
@@ -247,7 +281,6 @@ a {
 }
 .restaurant__like .full {
   max-width: 25px;
-  overflow: hidden;
   position: relative;
   fill: url(#fill-heart);
   opacity: 0;
@@ -255,6 +288,23 @@ a {
 .restaurant__like .full:hover {
   opacity: 1;
   transition: 0.5s;
+}
+
+/* FOOTER SECTION */
+.footer {
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+}
+.footer__wrapper {
+  min-width: 450px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */

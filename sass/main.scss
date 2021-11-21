@@ -1,3 +1,13 @@
+/*@import './vendors/';
+@import './utils/variables.scss';
+@import './bases/';
+@import './layout';
+@import './pages/';
+@import './components/';
+@import './themes/';*/
+
+
+
 /* VARIABLES */
 
 $primary: #9356DC;
@@ -80,7 +90,7 @@ $btn-shadow: 2px 4px 8px $color-text;
 
 @mixin restaurant-pic {
     width: 100%;
-    height: 100%;
+    max-height: 220px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -101,7 +111,11 @@ a {
     text-decoration: none;
     color:black;
 }
-
+/*Text Uppercase Necessity*/
+.uppercase {
+    text-transform: uppercase;
+}
+/* Logo */
 .header {
     margin:0 auto;
     width: 100%;
@@ -112,6 +126,8 @@ a {
          & img {
             transform:scale(0.5);}       
 }
+        /* MAIN CONTENT */
+
 
 .main {
     width: 100%;
@@ -125,7 +141,7 @@ a {
             justify-content: space-between;
             @include text-bold; 
         }   
-            
+/* Section including "Explore" button */           
 }
 .discovery {
     height: auto;
@@ -149,6 +165,7 @@ a {
     @include btn-gradient;
     color:white;
 } 
+        /* PROCESS SECTION*/
 
 /* process panel */
 .process__wrapper {
@@ -160,6 +177,7 @@ a {
     min-width:100%;
     @include flex-format;
     flex-direction: column;
+
 /* Heading panel*/
         &__heading {
             min-width:auto;   
@@ -170,7 +188,7 @@ a {
              @include flex-format;
             flex-direction: column;
     }
-/* buttons display*/
+/* Process panel buttons display*/
         &__step {
             width: 100%;
             @include flex-format;
@@ -188,22 +206,19 @@ a {
             @include text-bold;
         }
 }
-/* restaurants section */
+        /* RESTAURANT SECTION */
 
 .restaurant {
     width: 100%;
     height: auto;
     margin:0 auto;
-   /* background-color:blueviolet ;*/
     
     &__wrapper {
         margin:0 auto;
         width: auto;
         height: 100%;
-     /*   background-color: yellowgreen;*/
         @include flex-format;
         flex-direction: column;
-        ;
     }
 
     &__container {
@@ -211,19 +226,29 @@ a {
         grid-template-columns: 350px;
         grid-row-gap:20px;
     }
-
+    /* Restaurant card link */
     &__link {
         margin:15px 0;
         width: 100%;
         height: auto;
         background-color:#fff;
         border-radius: 20px;
-        box-shadow: $btn-shadow;
-        
+        box-shadow: $btn-shadow;  
     }
-
-    &__card {
-        
+    /* "new" box display */
+    &__new {
+        @include flex-format;
+        margin-top: 20px;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        transform:translateX(225%);
+        background-color:$tertiaty;
+        color:darken($color: $tertiaty, $amount: 30);
+        font-weight: bold;
+    }
+    /* restaurant Identy Card */
+    &__card {  
         margin-bottom: 20px;
         display:flex;
         flex-direction: column;
@@ -234,41 +259,37 @@ a {
         } 
        
     }
-
+       
     &__description {
         margin-top: 20px;
         position: relative;
         @include flex-format;
         justify-content: space-between;
-        
         }
-
+            /* Identity Restaurant formatting */
         &__identity {
-            
             padding-left: 20px;
             display: flex;
             flex-direction: column;
             justify-content:flex-start ;
             margin:0;
              }
-
+            /* First line with the bold-style name */
         &__name {
-            
             margin:0;
             @include text-bold;
-            
             }
-
+            /* Second line with the locality*/
         &__location {
             margin:0;
             }
-
+            /* "Like" section */
         &__like {
                     @include flex-format;
                     width: 30px;
                     padding-right: 20px;
-                    overflow:hidden;
                     
+                /* Heart animation on hover */    
                     .empty{
                         max-width: 23px;
                         position:absolute;
@@ -278,7 +299,6 @@ a {
                     }
                     .full{
                         max-width: 25px;
-                        overflow: hidden;
                         position: relative;
                         fill:url(#fill-heart);
                         opacity:0;
@@ -289,6 +309,23 @@ a {
                         }
                                  
                     }    
+}
+        /* FOOTER SECTION */
+
+.footer {
+    width: 100%;
+    margin:20px auto;
+    @include flex-format;
+    background-color: wheat;
+    
+    &__wrapper {
+        min-width: 450px;
+        height: 100%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+   
 }
 
         
