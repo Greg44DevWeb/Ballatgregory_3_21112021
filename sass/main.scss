@@ -1,122 +1,19 @@
-/*@import './vendors/';
+/*@import './vendors/';*/
 @import './utils/variables.scss';
-@import './bases/';
-@import './layout';
-@import './pages/';
-@import './components/';
-@import './themes/';*/
+@import './utils/mixins.scss';
+@import './bases/reset.scss';
+/*@import './layout/reset.scss';*/
+@import './pages/restaurant.scss';
+@import './pages/loader.scss';
+@import './components/buttons.scss';
+/*@import './themes/';*/
 
 
 
-/* VARIABLES */
-
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiaty: #99E2D0;
-$color-text: rgb(177, 175, 175);
-$background-section:lighten($color: rgb(223, 223, 223), $amount: 10);
-$background-gradient:linear-gradient( 160deg,rgb(255, 121, 218),rgb(147, 86, 220));
-$btn-shadow: 2px 4px 8px $color-text;
-
-/* MIXINS */
-@mixin flex-format {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@mixin text-bold {
-    font-weight: bold;
-    font-size: 16px;
-}
-
-@mixin btn-gradient {
-    margin:20px 0;
-    border-radius: 30px;
-    width: auto;
-    padding:0 20px;
-    height: 40px;
-    border:none;
-    background:$background-gradient;
-    box-shadow: $btn-shadow;
-        &:hover {
-            opacity:0.80;
-            cursor:pointer; 
-            box-shadow:3px 3px 7px  grey;
-            transition:0.3s;   
-        }  
-}
-
-@mixin panel-button {
-    @include flex-format;
-        height: 50px;
-        margin-bottom: 20px;
-        max-width: 250px;
-        padding-right: 70px;
-        border-radius: 15px;
-        box-shadow: $btn-shadow;
-        cursor:pointer;
-        position: relative;
-        &:hover {
-            background: lighten($color: $primary, $amount: 35%);
-            opacity:0.8;
-            transition:0.3s ease-in;
-            box-shadow:2px 5px 10px grey;
-            
-        }
-}
-@mixin btn-number {
-    @include flex-format;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: $primary;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    position: relative;
-    transform:translateX(-50%);
-    overflow: visible;
-}
-
-@mixin process-icon {
-    width: 20px;
-    @include flex-format;
-    position:relative;
-    color:$color-text;
-    margin:0 15px;
-    font-size: 1.2em;
-}
-
-@mixin restaurant-pic {
-    width: 100%;
-    max-height: 220px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-}
-
-
-/* GENERAL RULES*/
-body {
-    box-sizing: border-box;
-    margin:0 ;
-    overflow-x: hidden;
-    font-family: roboto, sans-serif;
-    font-size: 16px;
-}
-
-a {
-    text-decoration: none;
-    color:black;
-}
-/*Text Uppercase Necessity*/
-.uppercase {
-    text-transform: uppercase;
-}
 /* Logo */
+
 .header {
+    position:relative;
     margin:0 auto;
     width: 100%;
     height: auto;
@@ -130,20 +27,23 @@ a {
 
 
 .main {
+    
+    @include flex-format;
+    flex-direction: column;
     width: 100%;
     height: auto;
     
         &_localisation  {
             height: auto;
             margin:0 auto;
-            width: 120px;
-            @include flex-format;
-            justify-content: space-between;
+            width: 100%;
+           @include flex-format;
             @include text-bold; 
         }   
 /* Section including "Explore" button */           
 }
 .discovery {
+    width: 100%;
     height: auto;
     margin-top: 200px;
     margin:0 auto;
@@ -172,15 +72,17 @@ a {
     width: 100%;
     background-color:white;
     @include flex-format;
+    justify-content: flex-start;
 }
 .process {
-    min-width:100%;
+   width:100%;
     @include flex-format;
     flex-direction: column;
+    
 
 /* Heading panel*/
         &__heading {
-            min-width:auto;   
+            width:350px; 
         }
 
         &__container {
@@ -212,6 +114,10 @@ a {
     width: 100%;
     height: auto;
     margin:0 auto;
+
+    &__heading {
+        width: 350px;
+    }
     
     &__wrapper {
         margin:0 auto;
@@ -219,11 +125,12 @@ a {
         height: 100%;
         @include flex-format;
         flex-direction: column;
+        background-color: $background-section;
     }
 
     &__container {
         display:grid;
-        grid-template-columns: 350px;
+        grid-template-columns: 1fr;
         grid-row-gap:20px;
     }
     /* Restaurant card link */
@@ -253,7 +160,7 @@ a {
         display:flex;
         flex-direction: column;
         height: auto;
-        width: 100%;
+        min-width: 350px;;
         img {
             @include restaurant-pic;
         } 
@@ -287,46 +194,51 @@ a {
         &__like {
                     @include flex-format;
                     width: 30px;
-                    padding-right: 20px;
-                    
-                /* Heart animation on hover */    
-                    .empty{
-                        max-width: 23px;
-                        position:absolute;
-                        stroke:black; 
-                        fill:white;
-    
-                    }
-                    .full{
-                        max-width: 25px;
-                        position: relative;
-                        fill:url(#fill-heart);
-                        opacity:0;
-                            &:hover {
-                                opacity:1;
-                                transition:0.5s;
-                            }
-                        }
-                                 
-                    }    
+                    padding-right: 20px;                 
+                    } 
 }
         /* FOOTER SECTION */
 
 .footer {
     width: 100%;
-    margin:20px auto;
+    margin:0 auto;
     @include flex-format;
-    background-color: wheat;
     
     &__wrapper {
-        min-width: 450px;
+        width: 100%;
         height: 100%;
         margin:0 auto;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        background-color: lighten($color: #000000, $amount: 25%);
+        color:white;
+        }
+
+    & a {
+        color:white;
+            &:hover {
+                text-decoration: underline;
+            }   
     }
-   
+
+    &__links {
+        width: 350px;
+        display: flex;
+        flex-direction:column ;
+        gap:10px;
+    }
+    &__heading {
+        margin-top: 10px;
+       
+    }
+
+    & i {
+        margin-right: 10px;
+    }
+
 }
+
 
         
        

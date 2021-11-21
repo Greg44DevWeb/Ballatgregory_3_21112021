@@ -1,0 +1,78 @@
+@mixin flex-format {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-bold {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/*@mixin btn-gradient {
+    margin:20px 0;
+    border-radius: 30px;
+    width: auto;
+    padding:0 20px;
+    height: 40px;
+    border:none;
+    background:$background-gradient;
+    box-shadow: $btn-shadow;
+        &:hover {
+            opacity:0.80;
+            cursor:pointer; 
+            box-shadow:3px 3px 7px  grey;
+            transition:0.3s;   
+        }  
+}
+*/
+
+/* Process step stlye */
+@mixin panel-button {
+    @include flex-format;
+        height: 50px;
+        margin-bottom: 20px;
+        width: 50%;
+        padding-right: 70px;
+        border-radius: 15px;
+        box-shadow: $btn-shadow;
+        cursor:pointer;
+        position: relative;
+        &:hover {
+            background: lighten($color: $primary, $amount: 35%);
+            opacity:0.8;
+            transition:0.3s ease-in;
+            box-shadow:2px 5px 10px grey;
+            
+        }
+}
+@mixin btn-number {
+    @include flex-format;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $primary;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    transform:translateX(-50%);
+    overflow: visible;
+}
+
+@mixin process-icon {
+    width: 20px;
+    @include flex-format;
+    position:relative;
+    color:$color-text;
+    margin:0 15px;
+    font-size: 1.2em;
+}
+
+@mixin restaurant-pic {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
