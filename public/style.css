@@ -1,21 +1,4 @@
 /*@import './vendors/';*/
-/*@mixin btn-gradient {
-    margin:20px 0;
-    border-radius: 30px;
-    width: auto;
-    padding:0 20px;
-    height: 40px;
-    border:none;
-    background:$background-gradient;
-    box-shadow: $btn-shadow;
-        &:hover {
-            opacity:0.80;
-            cursor:pointer; 
-            box-shadow:3px 3px 7px  grey;
-            transition:0.3s;   
-        }  
-}
-*/
 /* Process step stlye */
 /* GENERAL RULES*/
 body {
@@ -36,85 +19,11 @@ a {
   text-transform: uppercase;
 }
 
-/*@import './layout/reset.scss';*/
-.page-header img {
-  width: 100%;
-  height: auto;
+li {
+  list-style-type: none;
 }
 
-.loader__wrapper {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  animation: wrapper 4s linear;
-  visibility: hidden;
-  z-index: 500;
-}
-
-@keyframes wrapper {
-  0% {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-    background-color: white;
-    opacity: 0.9;
-    visibility: hidden;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    opacity: 0.9;
-    visibility: visible;
-  }
-}
-.loader {
-  border: 16px solid #99E2D0;
-  width: 120px;
-  height: 120px;
-  z-index: 1000;
-  border-top-color: #9356DC;
-  border-bottom-color: #FF79DA;
-  border-radius: 50%;
-  animation: loader 4s linear;
-}
-
-@keyframes loader {
-  0% {
-    transform: rotate(0deg) scale(1);
-    border-top-color: #9356DC;
-    border-bottom-color: #FF79DA;
-  }
-  25% {
-    transform: rotate(180deg) scale(1.15);
-    border-top-color: #FF79DA;
-    border-bottom-color: #9356DC;
-  }
-  50% {
-    transform: rotate(360deg) scale(0.85);
-    border-top-color: #9356DC;
-    border-bottom-color: #FF79DA;
-  }
-  100% {
-    transform: rotate(720deg) scale(1);
-    border-top-color: #FF79DA;
-    border-bottom-color: #9356DC;
-  }
-}
+/* Process button */
 /* Explore Button*/
 /* Heart transition button */
 .empty {
@@ -135,13 +44,12 @@ a {
   transition: 0.5s;
 }
 
-/*@import './themes/';*/
 /* Logo */
 .header {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: auto;
+  height: 50px;
   border-bottom: 1px solid #cacaca;
   box-shadow: 0px 3px 10px #c8c7c7;
   display: flex;
@@ -152,151 +60,94 @@ a {
   transform: scale(0.5);
 }
 
-/* MAIN CONTENT */
-.main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  /* Section including "Explore" button */
-}
-.main_localisation {
+#processus {
+  max-width: 600px;
   height: auto;
   margin: 0 auto;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.discovery {
-  width: 100%;
-  height: auto;
-  margin-top: 200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
-  flex-direction: column;
-  text-align: center;
-}
-.discovery__heading {
-  margin: 30px 120px 10px 120px;
-}
-.discovery__secondary {
-  color: #666666;
-  margin: 0 100px;
-}
-
-/* gradient "explore" button */
-.discovery button {
-  margin: 20px 0;
-  border-radius: 30px;
-  width: auto;
-  padding: 0 20px;
-  height: 40px;
-  border: none;
-  background: linear-gradient(160deg, #ff79da, #9356dc);
-  box-shadow: 2px 4px 8px #b1afaf;
-  color: white;
-}
-.discovery button:hover {
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 3px 3px 7px grey;
-  transition: 0.3s;
-}
-
-/* PROCESS SECTION*/
-/* process panel */
-.process__wrapper {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .process {
-  width: 100%;
+  max-width: 350px;
+  height: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  /* Heading panel*/
-  /* Process panel buttons display*/
+  align-items: flex-start;
 }
-.process__heading {
+.process__button {
+  padding: 0;
   width: 350px;
-}
-.process__container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.process__step {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  margin-bottom: 20px;
-  width: 50%;
-  padding-right: 70px;
+  height: 60px;
   border-radius: 15px;
+  background-color: #f7f8f8;
   box-shadow: 2px 4px 8px #b1afaf;
-  cursor: pointer;
-  position: relative;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: center;
 }
-.process__step:hover {
-  background: #f2eafb;
-  opacity: 0.8;
-  transition: 0.3s ease-in;
-  box-shadow: 2px 5px 10px grey;
+.process__button:hover {
+  box-shadow: 2px 4px 8px 3px #b1afaf;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #fff9fd;
 }
-.process__level {
+.process__button:hover i {
+  color: #9356DC;
+}
+.process__number {
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
   background-color: #9356DC;
   color: white;
   font-size: 12px;
   font-weight: bold;
   position: relative;
-  transform: translateX(-50%);
   overflow: visible;
 }
 .process__icon {
-  width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  margin: 0 20px;
   color: #b1afaf;
-  margin: 0 15px;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 .process__content {
   font-weight: bold;
-  font-size: 16px;
 }
 
-/* RESTAURANT SECTION */
+.num {
+  position: relative;
+  font-weight: bold;
+  font-family: roboto;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #f5d6d6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone {
+  color: #828585;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  font-family: roboto;
+  font-weight: bold;
+}
+
 .restaurant {
   width: 100%;
   height: auto;
@@ -393,7 +244,6 @@ a {
   padding-right: 20px;
 }
 
-/* FOOTER SECTION */
 .footer {
   width: 100%;
   margin: 0 auto;
@@ -429,5 +279,275 @@ a {
 .footer i {
   margin-right: 10px;
 }
+
+.page-header img {
+  width: 100%;
+  height: auto;
+}
+
+.loader__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  animation: wrapper 4s linear;
+  visibility: hidden;
+  z-index: 500;
+}
+
+@keyframes wrapper {
+  0% {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    opacity: 0.9;
+    visibility: hidden;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    opacity: 0.9;
+    visibility: visible;
+  }
+}
+.loader {
+  border: 16px solid #99E2D0;
+  width: 120px;
+  height: 120px;
+  z-index: 1000;
+  border-top-color: #9356DC;
+  border-bottom-color: #FF79DA;
+  border-radius: 50%;
+  animation: loader 4s linear;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg) scale(1);
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+  }
+  25% {
+    transform: rotate(180deg) scale(1.15);
+    border-top-color: #FF79DA;
+    border-bottom-color: #9356DC;
+  }
+  50% {
+    transform: rotate(360deg) scale(0.85);
+    border-top-color: #9356DC;
+    border-bottom-color: #FF79DA;
+  }
+  100% {
+    transform: rotate(720deg) scale(1);
+    border-top-color: #FF79DA;
+    border-bottom-color: #9356DC;
+  }
+}
+/*@import './themes/';*/
+/* MAIN CONTENT */
+.main {
+  width: 100%;
+  height: auto;
+  /* Section including "Explore" button */
+}
+.main_localisation {
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #dfdfdf;
+}
+.main_localisation i {
+  margin: 0 10px;
+}
+
+.discovery {
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  text-align: center;
+}
+.discovery__heading {
+  margin: 30px 120px 10px 120px;
+}
+.discovery__secondary {
+  color: #666666;
+  margin: 0 100px;
+}
+
+/* gradient "explore" button */
+.discovery button {
+  margin: 20px 0;
+  border-radius: 30px;
+  width: auto;
+  padding: 0 20px;
+  height: 50px;
+  border: none;
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  box-shadow: 2px 4px 8px #b1afaf;
+  color: white;
+  font-weight: bold;
+}
+.discovery button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  box-shadow: 3px 3px 7px grey;
+  transition: 0.3s;
+}
+
+/* PROCESS SECTION*/
+/* RESTAURANT SECTION */
+/*.restaurant {
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+
+    &__heading {
+        width: 350px;
+    }
+
+    &__wrapper {
+        margin:0 auto;
+        width: auto;
+        height: 100%;
+        @include flex-format;
+        flex-direction: column;
+        background-color: $background-section;
+    }
+
+    &__container {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-row-gap:20px;
+    }
+    /* Restaurant card link */
+/*&__link {
+    margin:15px 0;
+    width: 100%;
+    height: auto;
+    background-color:#fff;
+    border-radius: 20px;
+    box-shadow: $btn-shadow;  
+}
+/* "new" box display */
+/* &__new {
+     @include flex-format;
+     margin-top: 20px;
+     width: 100px;
+     height: 35px;
+     position: absolute;
+     transform:translateX(225%);
+     background-color:$tertiaty;
+     color:darken($color: $tertiaty, $amount: 30);
+     font-weight: bold;
+ }
+ /* restaurant Identy Card */
+/*&__card {  
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: column;
+    height: auto;
+    min-width: 350px;;
+    img {
+        @include restaurant-pic;
+    } 
+
+}
+
+&__description {
+    margin-top: 20px;
+    position: relative;
+    @include flex-format;
+    justify-content: space-between;
+    }
+        /* Identity Restaurant formatting */
+/*&__identity {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    margin:0;
+     }
+    /* First line with the bold-style name */
+/* &__name {
+     margin:0;
+     @include text-bold;
+     }
+     /* Second line with the locality*/
+/*&__location {
+    margin:0;
+    }
+    /* "Like" section */
+/* &__like {
+                    @include flex-format;
+                    width: 30px;
+                    padding-right: 20px;                 
+                    } 
+}
+        /* FOOTER SECTION */
+/*.footer {
+    width: 100%;
+    margin:0 auto;
+    @include flex-format;
+
+    &__wrapper {
+        width: 100%;
+        height: 100%;
+        margin:0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lighten($color: #000000, $amount: 25%);
+        color:white;
+        }
+
+    & a {
+        color:white;
+            &:hover {
+                text-decoration: underline;
+            }   
+    }
+
+    &__links {
+        width: 350px;
+        display: flex;
+        flex-direction:column ;
+        gap:10px;
+    }
+    &__heading {
+        margin-top: 10px;
+
+    }
+
+    & i {
+        margin-right: 10px;
+    }
+
+}*/
 
 /*# sourceMappingURL=style.css.map */

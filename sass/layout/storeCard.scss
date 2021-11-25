@@ -1,0 +1,87 @@
+.restaurant {
+    width: 100%;
+    height: auto;
+    margin:0 auto;
+
+    &__heading {
+        width: 350px;
+    }
+    
+    &__wrapper {
+        margin:0 auto;
+        width: auto;
+        height: 100%;
+        @include flex-format;
+        flex-direction: column;
+        background-color: $background-section;
+    }
+
+    &__container {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-row-gap:20px;
+    }
+    /* Restaurant card link */
+    &__link {
+        margin:15px 0;
+        width: 100%;
+        height: auto;
+        background-color:$whiteBg;
+        border-radius: 20px;
+        box-shadow: $btn-shadow;  
+    }
+    /* "new" box display */
+    &__new {
+        @include flex-format;
+        margin-top: 20px;
+        width: 100px;
+        height: 35px;
+        position: absolute;
+        transform:translateX(225%);
+        background-color:$tertiaty;
+        color:darken($color: $tertiaty, $amount: 30);
+        font-weight: bold;
+    }
+    /* restaurant Identy Card */
+    &__card {  
+        margin-bottom: 20px;
+        display:flex;
+        flex-direction: column;
+        height: auto;
+        min-width: 350px;;
+        img {
+            @include restaurant-pic;
+        } 
+       
+    }
+       
+    &__description {
+        margin-top: 20px;
+        position: relative;
+        @include flex-format;
+        justify-content: space-between;
+        }
+            /* Identity Restaurant formatting */
+        &__identity {
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-start ;
+            margin:0;
+             }
+            /* First line with the bold-style name */
+        &__name {
+            margin:0;
+            @include text-bold;
+            }
+            /* Second line with the locality*/
+        &__location {
+            margin:0;
+            }
+            /* "Like" section */
+        &__like {
+                    @include flex-format;
+                    width: 30px;
+                    padding-right: 20px;                 
+                    } 
+}
