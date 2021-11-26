@@ -1,18 +1,19 @@
 /* Heart transition button */    
 .empty{
-    max-width: 23px;
+    max-width: 28px;
     position:absolute;
     stroke:black; 
     fill:white;
 
 }
 .full{
-    max-width: 25px;
+    max-width: 34px;
     position: relative;
     fill:url(#fill-heart);
     opacity:0;
-        &:hover {
+        &:hover {   
             opacity:1;
-            transition:0.5s;
+            transition:0.5s; 
+            cursor:pointer; 
         }
     }

@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <!-- FONTAWESOME ICONS LINK -->
     <link
     rel="stylesheet"
@@ -22,16 +23,141 @@
     <title>Délices des sens</title>
 </head>
 <body>
-    <header class="page-header">
-        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+    <section id="fixed">
+    <header class="header">
+        <div class="header__logo">
+            <a class="header__logo-link" href="./index.html">
+                <img class="header__logo-img" src="images/logo/ohmyfood.png" alt="logo">
+            </a>
+        </div>
     </header>
-    <main class="restaurant__menu">
-        
-    </main>
+    <section class="page-header">
+        <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+    </section>
+</section> 
+    <main class="menu">
+        <section class="menu__wrapper">
+            <div class="menu__header">
+                <h1 class="menu__title"><span class="uppercase">l</span>a palette du gôut</h1>
+                    <div class="restaurant__like">
+                        <svg class="empty" viewBox="0 0 24 24" >
+                            <path d="M16.5,3C13.605,3,12,5.09,12,5.09S10.395,3,7.5,3C4.462,3,2,5.462,2,8.5c0,4.171,4.912,8.213,6.281,9.49 C9.858,19.46,12,21.35,12,21.35s2.142-1.89,3.719-3.36C17.088,16.713,22,12.671,22,8.5C22,5.462,19.538,3,16.5,3z"></path>
+                            <defs>
+                                <linearGradient id="fill-heart">
+                                <stop offset="0%" stop-color="#9356DC"/>
+                                <stop offset="100%" stop-color="#FF79DA"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <svg class="full" viewBox="0 0 24 24" >
+                            <path d="M16.5,3C13.605,3,12,5.09,12,5.09S10.395,3,7.5,3C4.462,3,2,5.462,2,8.5c0,4.171,4.912,8.213,6.281,9.49 C9.858,19.46,12,21.35,12,21.35s2.142-1.89,3.719-3.36C17.088,16.713,22,12.671,22,8.5C22,5.462,19.538,3,16.5,3z"></path>
+                    </div>
+            </div>
+        <!-- STARTERS SECTIONS -->
+            <section class="grid">
+                <p class="grid__title--uppercase">entrées</p>
+                <div class="grid__title--underline"></div>
+           <ul class="list">
+               <li class="list__buttonList">
+                    <div class="list__starters--flex">
+                        <p class="list__starters--bold">Fricassée d'escargot</p>
+                        <p class="list__starters--undertitle">Au piment d'Espelette</p>
+                    </div>
+                        <div class="list__starters--price">
+                            <p><strong>25€</strong></p>
+                        </div>   
+               </li>
+               <li class="list__buttonList">
+                <div class="list__starters--flex">
+                    <p class="list__starters--bold">Foie gras de canard mi-cuit</p>
+                    <p class="list__starters--undertitle">Et ses copeaux de truffe noire</p>
+                </div>
+                    <div class="list__starters--price">
+                        <p><strong>35€</strong></p>
+                    </div> 
+           </li>
+           <li class="list__buttonList">
+            <div class="list__starters--flex">
+                <p class="list__starters--bold">Oeuf au plat</p>
+                <p class="list__starters--undertitle">Assaisonné à la truffe sur lit de caviar</p>
+            </div>
+                <div class="list__starters--price">
+                    <p><strong>20€</strong></p>
+                </div>
+       </li>   
+           </ul>
+           <!-- MAIN COURSES SECTION -->
+           <p class="grid__title--uppercase">plats</p>
+           <div class="grid__title--underline"></div>
+      <ul class="list">
+          <li class="list__buttonList">
+               <div class="list__starters--flex">
+                   <p class="list__starters--bold">Filet de boeuf aux herbes</p>
+                   <p class="list__starters--undertitle">Accompagné de sa ribambelle de légumes</p>
+               </div>
+                   <div class="list__starters--price">
+                       <p><strong>40€</strong></p>
+                   </div>   
+          </li>
+          <li class="list__buttonList">
+           <div class="list__starters--flex">
+               <p class="list__starters--bold">Parmentier de queue de boeuf</p>
+               <p class="list__starters--undertitle"><span class="uppercase">à</span> la truffe noire sur sa purée de panais</p>
+           </div>
+               <div class="list__starters--price">
+                   <p><strong>35€</strong></p>
+               </div> 
+      </li>
+      <li class="list__buttonList">
+       <div class="list__starters--flex">
+           <p class="list__starters--bold">Filet de turbot</p>
+           <p class="list__starters--undertitle">Aux agrumes</p>
+       </div>
+           <div class="list__starters--price">
+               <p><strong>44€</strong></p>
+           </div>
+  </li>   
+      </ul>
+      <!-- DESERTS SECTION -->
+      <p class="grid__title--uppercase">desserts</p>
+      <div class="grid__title--underline"></div>
+ <ul class="list">
+     <li class="list__buttonList">
+          <div class="list__starters--flex">
+              <p class="list__starters--bold">Paris-Brest</p>
+              <p class="list__starters--undertitle">Revisité</p>
+          </div>
+              <div class="list__starters--price">
+                  <p><strong>18€</strong></p>
+              </div>   
+     </li>
+     <li class="list__buttonList">
+      <div class="list__starters--flex">
+          <p class="list__starters--bold">Macaron au chocolat d'exception </p>
+          <p class="list__starters--undertitle">Et glace à la vanille de Madagascar</p>
+      </div>
+          <div class="list__starters--price">
+              <p><strong>22€</strong></p>
+          </div> 
+ </li>
+ <li class="list__buttonList">
+  <div class="list__starters--flex">
+      <p class="list__starters--bold">Mousse au chocolat</p>
+      <p class="list__starters--undertitle">Au piment d'Espelette et à la truffe noire</p>
+  </div>
+      <div class="list__starters--price">
+          <p><strong>23€</strong></p>
+      </div>
+</li>   
+ </ul>
+            </section>
+        </section>
+       
+    </main> -->
 
 
 
-    <!-- FOOTER SECTION -->
+    <!-- FOOTER SECTION
     <footer class="footer">
         <div class="footer__wrapper">
             <div class="footer__links">
@@ -65,7 +191,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     
 </body>
 </html>

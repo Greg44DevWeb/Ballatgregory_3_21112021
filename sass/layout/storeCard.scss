@@ -4,12 +4,12 @@
     margin:0 auto;
 
     &__heading {
-        width: 350px;
+        width: 90%;
     }
     
     &__wrapper {
         margin:0 auto;
-        width: auto;
+        width: 100%;
         height: 100%;
         @include flex-format;
         flex-direction: column;
@@ -17,6 +17,7 @@
     }
 
     &__container {
+        width: 90%;
         display:grid;
         grid-template-columns: 1fr;
         grid-row-gap:20px;
@@ -37,7 +38,7 @@
         width: 100px;
         height: 35px;
         position: absolute;
-        transform:translateX(225%);
+        right:20%;
         background-color:$tertiaty;
         color:darken($color: $tertiaty, $amount: 30);
         font-weight: bold;

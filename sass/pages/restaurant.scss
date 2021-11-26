@@ -1,8 +1,95 @@
-.page-header {
-&   img{
+#fixed {
     width: 100%;
-    height: auto;
+    position:fixed;
+}
+.page-header {
+    &   img{
+        width: 100%;
+        height: 500px;
+        
+        object-fit: cover;
+        position: relative;
+        }
+}
+.menu {
+    width: 100%;
+    height: 100vh;
+    
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    position:relative;
+    transform:translateY(50%);
+    background-color: $background-section;
+    
+    
+
+    &__header {
+        margin:0 auto;
+        width: 90%;
+        height: 50px;
+        @include flex-format;
+        justify-content: space-between; 
+    }
 }
 
+.grid {
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    height: 100%;
+
+    &__title {
+        &--uppercase {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom:0;
+        }
+         &--underline {
+            @include underline;
+        }
+    }
 }
+.list {
+    width: 100%;
+    min-height: 230px;
+    padding:0;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+    &__buttonList {
+        width: 100%;
+        @include flex-format;
+        justify-content: flex-start;
+        @include listButton;
+        &:hover {
+            box-shadow: $shadowHover;
+            transition:0.2s;
+            cursor:pointer;
+        }
+        
+    }
+    &__starters {
+        display:flex;
+        flex-direction: column;
+        &--flex {
+            width: 90%;
+        }
+        &--bold {
+            font-weight: bold;
+            @include positionButtonMenu;
+        }
+        &--undertitle {
+            @include positionButtonMenu;
+        }
+        &--price {
+            @include flex-format;
+        }
+    }
+}
+
+
 
