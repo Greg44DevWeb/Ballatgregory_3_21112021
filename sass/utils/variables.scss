@@ -11,3 +11,12 @@ $whiteBg:#fff;
 
 $background-section:lighten($color: rgb(223, 223, 223), $amount: 10);
 $background-gradient:linear-gradient( 170deg,rgb(255, 121, 218),rgb(147, 86, 220));
+
+/* Animations Durations */
+$longduration: 3s;
+$mediumduration: 1s;
+$shortduration:0.5s;
+
+$items:3;
+$anim-delay:0.5;
+

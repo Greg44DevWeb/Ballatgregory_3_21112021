@@ -1,0 +1,18 @@
+/* main container & localisation Icon */
+
+.main {
+    width: 100%;
+    height: auto;
+    
+    
+        &__localisation  {
+            
+            
+            
+            width: 100%;
+            @include flex-format;
+            @include text-bold; 
+            background-color: darken($background-section,10%);
+            & i {margin:0 10px;}
+        }           
+}

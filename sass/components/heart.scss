@@ -2,18 +2,20 @@
 .empty{
     max-width: 28px;
     position:absolute;
+    right:20px;
     stroke:black; 
     fill:white;
 
 }
 .full{
-    max-width: 34px;
-    position: relative;
+    max-width: 32px;
+    right:18px;
+    position: absolute;
     fill:url(#fill-heart);
     opacity:0;
         &:hover {   
             opacity:1;
-            transition:0.5s; 
+            transition:$shortduration; 
             cursor:pointer; 
         }
     }
