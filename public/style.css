@@ -1,7 +1,20 @@
 /*@import './vendors/';*/
+/* Fonts Color*/
+/* Button and boxes shadows*/
+/* Background for Button panel and menus*/
+/* basic background color for Index Sections and Menu Containers*/
+/* grandient color for Explore and command button */
 /* Animations Durations */
+/* Menu sections*/
 /* radius */
+/* font-size */
+/* Rotation Degrees */
+/*TEST RESPONSIVE */
+/* Flex Format PreStyle*/
+/* Title Menu Style */
 /* Process step stlye */
+/* Step Number in process button */
+/* Icon in process button */
 /* GENERAL RULES*/
 body {
   box-sizing: border-box;
@@ -57,22 +70,6 @@ ul {
   cursor: pointer;
 }
 
-@keyframes test {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-@keyframes RotateIcon {
-  0% {
-    rotate: 0;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
 /* Logo */
 .header {
   position: relative;
@@ -143,7 +140,7 @@ ul {
   background: linear-gradient(170deg, #ff79da, #9356dc);
   box-shadow: 2px 4px 8px #b1afaf;
   color: #fff;
-  color: white;
+  color: #fff;
   font-weight: bold;
 }
 .discovery button:hover {
@@ -432,7 +429,7 @@ ul {
   content: "";
   display: block;
   width: 40px;
-  height: 2px;
+  height: 3px;
   background-color: #99E2D0;
 }
 
@@ -470,15 +467,26 @@ ul {
   box-shadow: 2px 4px 8px 3px #b1afaf;
   cursor: pointer;
 }
+.list-items__button:hover .checkbox {
+  transform-origin: right;
+  width: 100px;
+  transition: 0.6s cubic-bezier(0.18, 0.74, 0.81, 1.09);
+}
+.list-items__button:hover .checkbox i {
+  color: white;
+  transform: rotate(720deg);
+  transition: all 0.5s ease-in-out;
+}
 .list-items__flexcontent {
   margin: 0;
   padding-left: 20px;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .list-items__flexcontent--bold {
+  width: 100%;
   font-weight: bold;
   font-size: 16px;
   margin: 0;
@@ -487,6 +495,7 @@ ul {
   text-overflow: ellipsis;
 }
 .list-items__flexcontent--underline {
+  max-width: 90%;
   margin: 0;
   color: #b1afaf;
   overflow: hidden;
@@ -500,9 +509,12 @@ ul {
   font-weight: bold;
   font-size: 16px;
   padding-right: 20px;
+  overflow: visible;
 }
-.list-items__flexcontent--validation {
-  width: 50px;
+
+/* check validation formatting */
+.checkbox {
+  width: 0;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -511,14 +523,15 @@ ul {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-.list-items__flexcontent--validation i {
-  font-size: 20px;
-  color: #fff;
-  animation: RotateIcon 3s;
+.checkbox i {
+  color: transparent;
+  font-size: 24px;
 }
 
+/* "Command" Button */
 .command {
   width: 100%;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -623,6 +636,22 @@ ul {
   100% {
     opacity: 1;
     transform: translatey(-10%);
+  }
+}
+@media screen and (min-width: 800px) {
+  #processus {
+    display: flex;
+    flex-direction: column;
+  }
+  #processus .process {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: aqua;
+  }
+  #processus .process__button {
+    max-width: 300px;
   }
 }
 /*@import './themes/';*/

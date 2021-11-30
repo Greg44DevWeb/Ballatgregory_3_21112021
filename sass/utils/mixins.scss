@@ -1,15 +1,14 @@
+/* Flex Format PreStyle*/
 @mixin flex-format {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+/* Title Menu Style */
 @mixin text-bold {
     font-weight: bold;
     font-size: 16px;
 }
-
-
 
 /* Process step stlye */
 @mixin panel-button {
@@ -29,7 +28,7 @@
             box-shadow:2px 5px 10px grey;   
         }
 }
-
+/* Step Number in process button */
 @mixin btn-number {
     @include flex-format;
     width: 25px;
@@ -42,7 +41,7 @@
     position: relative;
     overflow: visible;
 }
-
+/* Icon in process button */
 @mixin process-icon {
     width: 20px;
     @include flex-format;
@@ -56,14 +55,14 @@
     width: 100%;
     max-height: 220px;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: $cardRadius;
+    border-top-right-radius: $cardRadius;
 }
 
 @mixin boxShadowHover {
     box-shadow: $shadowHover;
     cursor:pointer;
-    transition:0.3s;
+    transition:$transitionduration;
     background-color: $secondaryLight;
 }
 
@@ -82,7 +81,7 @@
     content: "";
     display: block;
     width: 40px;
-    height: 2px;
+    height: 3px;
     background-color: $tertiaty;
 }
 

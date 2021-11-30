@@ -21,6 +21,6 @@
 .discovery
    button {
     @include btn-gradient;
-    color:white;
+    color:$whiteBg;
     font-weight:bold;
 }
