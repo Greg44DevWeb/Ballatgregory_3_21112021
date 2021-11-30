@@ -85,3 +85,9 @@
     height: 2px;
     background-color: $tertiaty;
 }
+
+@mixin titleMenu {
+    text-transform: uppercase;
+    color:$color-text;
+    font-size: 20px;
+}

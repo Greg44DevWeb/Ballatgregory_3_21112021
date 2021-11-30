@@ -1,12 +1,23 @@
-@keyframes checked {
-    0% {width: 0px;
-        
+
+
+
+@keyframes test {
+    0% {
+              transform: scaleX(0);
     }
-    50% {
-        width:50px;
+    100% {
+            
+              transform: scaleX(1);
     }
-    100% { 
-        width: 100px;
-        background-color: $tertiaty;
-    }
-}
+  }
+
+  @keyframes RotateIcon {
+      0% {
+          rotate: 0;
+      }
+
+      100% { 
+          rotate:360deg;
+      }
+  }
+  

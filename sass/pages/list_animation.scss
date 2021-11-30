@@ -1,12 +1,15 @@
+/* MENU BLOCK ANIMATION*/
+
 @keyframes apparition {
     0% {
+        transform:translatey();
         opacity:0;
-        }
+    }
 
     
     100% {
         opacity:1;
-        transform:translatey(-10%);
-        visibility:visible;     
-}
+        transform:translatey(-10%);   
+         
+        }
 }

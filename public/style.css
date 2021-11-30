@@ -1,5 +1,6 @@
 /*@import './vendors/';*/
 /* Animations Durations */
+/* radius */
 /* Process step stlye */
 /* GENERAL RULES*/
 body {
@@ -56,16 +57,20 @@ ul {
   cursor: pointer;
 }
 
-@keyframes checked {
+@keyframes test {
   0% {
-    width: 0px;
-  }
-  50% {
-    width: 50px;
+    transform: scaleX(0);
   }
   100% {
-    width: 100px;
-    background-color: #99E2D0;
+    transform: scaleX(1);
+  }
+}
+@keyframes RotateIcon {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
   }
 }
 /* Logo */
@@ -420,6 +425,8 @@ ul {
 }
 .menu-container__firstHead {
   text-transform: uppercase;
+  color: #b1afaf;
+  font-size: 20px;
 }
 .menu-container__firstHead::after {
   content: "";
@@ -430,14 +437,22 @@ ul {
 }
 
 .list-items {
+  opacity: 0;
   width: 100%;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   animation: apparition 1s ease-out forwards;
-  /*voir boucle */
-  /* ou voir boucle */
+}
+.list-items--1 {
+  animation-delay: 0.5s;
+}
+.list-items--2 {
+  animation-delay: 1s;
+}
+.list-items--3 {
+  animation-delay: 1.5s;
 }
 .list-items__button {
   padding: 0;
@@ -473,6 +488,7 @@ ul {
 }
 .list-items__flexcontent--underline {
   margin: 0;
+  color: #b1afaf;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -485,9 +501,8 @@ ul {
   font-size: 16px;
   padding-right: 20px;
 }
-
-.checked {
-  width: 0;
+.list-items__flexcontent--validation {
+  width: 50px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -495,7 +510,11 @@ ul {
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  animation: checked 3s ease-out linear;
+}
+.list-items__flexcontent--validation i {
+  font-size: 20px;
+  color: #fff;
+  animation: RotateIcon 3s;
 }
 
 .command {
@@ -595,14 +614,15 @@ ul {
     border-bottom-color: #9356DC;
   }
 }
+/* MENU BLOCK ANIMATION*/
 @keyframes apparition {
   0% {
+    transform: translatey();
     opacity: 0;
   }
   100% {
     opacity: 1;
     transform: translatey(-10%);
-    visibility: visible;
   }
 }
 /*@import './themes/';*/
