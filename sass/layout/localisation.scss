@@ -4,12 +4,27 @@
     width: 100%;
     height: auto;
        
-        &__localisation  {
-            
+        &__localisation {
+            height: 50px;
             width: 100%;
             @include flex-format;
             @include text-bold; 
             background-color: darken($background-section,10%);
             & i {margin:0 10px;}
-        }           
+/* input field formatting */
+            & input {
+                width: 100px;
+                border:none;
+                outline:none;
+                background-color: transparent;
+                font-weight: bold;
+                font-family: roboto;
+                &::placeholder {
+                    color:black;
+                    
+                }
+            
+            }
+        }
+        
 }

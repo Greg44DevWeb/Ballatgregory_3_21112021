@@ -25,7 +25,10 @@ $longduration: 3s;
 $mediumduration: 1s;
 $shortduration:0.5s;
 
+
+$loaderDuration:2s;
 $transitionduration:0.3s;
+/* delay between blocks menus*/
 $anim-delay:0.5s;
 
 /* Menu sections*/
@@ -36,6 +39,7 @@ $items:3;
 $radius: 15px;
 $X2radius:30px;
 $cardRadius:20px;
+$newBox:5px;
 
 /* font-size */
 $checkIcon:24px;

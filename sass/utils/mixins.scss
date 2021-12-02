@@ -52,7 +52,7 @@
 }
 /* Pics display in restaurants cards display*/
 @mixin restaurant-pic {
-    width: 100%;
+    width:100%;
     max-height: 220px;
     object-fit: cover;
     border-top-left-radius: $cardRadius;

@@ -94,9 +94,10 @@
     /* button content */       
             &__flexcontent {
                 @include positionButtonMenu;
-                width:100%;
+                width:50px;
                 display: flex;
                 flex-direction: column;
+                flex-grow: 1;
                 justify-content:space-around;
                     &--bold {
                         width: 100%;
@@ -117,8 +118,9 @@
                                 overflow:visible;
                             }
 
-            }
-}
+           
+                     }
+        }
 
 /* check validation formatting */
 .checkbox {

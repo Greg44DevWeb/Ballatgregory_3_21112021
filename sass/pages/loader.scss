@@ -6,7 +6,7 @@
         @include flex-format;
         flex-direction: column;
         justify-content: center;
-        animation: wrapper $longduration linear;
+        animation: wrapper $loaderDuration linear;
         visibility: hidden;
         z-index:500;
         
@@ -41,7 +41,7 @@
     border-top-color:$primary;
     border-bottom-color: $secondary;
     border-radius: 50%;
-    animation: loader $longduration linear;  
+    animation: loader $loaderDuration linear;  
 }
 /*  CIRCLE ANIMATION */
 @keyframes loader {
