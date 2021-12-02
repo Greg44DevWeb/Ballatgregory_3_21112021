@@ -281,7 +281,7 @@ ul {
   display: flex;
   flex-direction: column;
   height: auto;
-  min-width: 350px;
+  width: 100%;
   /* "New" box Display*/
 }
 .restaurant__card img {
@@ -701,7 +701,7 @@ ul {
     column-gap: 40px;
   }
   .restaurant__container {
-    width: 400px;
+    width: 350px;
   }
 
   /* Responsive for Restaurant Page */
