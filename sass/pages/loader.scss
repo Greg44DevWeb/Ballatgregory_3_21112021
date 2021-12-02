@@ -11,6 +11,7 @@
         z-index:500;
         
 }
+/* WRAPPER ANIMATION */
 @keyframes wrapper {
     0% {
         width: 100%;
@@ -42,7 +43,7 @@
     border-radius: 50%;
     animation: loader $longduration linear;  
 }
-
+/*  CIRCLE ANIMATION */
 @keyframes loader {
     
     0% {

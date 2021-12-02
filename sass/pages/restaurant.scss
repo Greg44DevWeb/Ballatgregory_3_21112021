@@ -1,16 +1,17 @@
+/* haeder with logo */
 #fixed {
     width: 100%;
     height: 100%;
     position:fixed;
 }
-
+/* back arrow */
 .back {
     height:50px;
     @include flex-format;
     left: 20px;
     position: absolute;  
 }
-
+/* background image display */
 .page-header {
     & img{
         width: 100%;
@@ -19,9 +20,8 @@
         position: relative;
         }
 }
-
+/* main container display*/
 .menu {
-    
     position: absolute;
     width: 100%;
     height: auto;
@@ -31,8 +31,6 @@
     background-color: $background-section;
     display: flex;
     flex-direction: column;
-    
- 
         &__header {
             margin:0 auto;
             margin-bottom:50px;
@@ -43,9 +41,8 @@
         }
 }
 
-
-.menu-container{
-    
+/* Type of dishes titles with green underline */
+.menu-container{   
     margin:0 auto;
     width:90%;
     height: auto;
@@ -59,7 +56,7 @@
     
 }
 
-
+/* button style & display */
 .list-items {
     opacity:0;
     width: 100%;
@@ -68,13 +65,13 @@
     flex-direction: column;
     justify-content: space-around;
     animation:apparition $mediumduration ease-out forwards;
+        /* boucle for delay between the dishes containers */
         @for $i from 1 through 3 {
             &--#{$i} {
                 animation-delay:$shortduration * $i;}
             }
-
-            &__button {
-                
+            
+            &__button { 
                 @include listButton;
                 @include flex-format;
                 justify-content: space-between;
@@ -83,7 +80,7 @@
                     box-shadow: $shadowHover;
                     cursor:pointer;
                     & .checkbox {
-                       
+                       /* transition with check */
                         transform-origin:right;
                         width: 100px;
                         transition:0.6s cubic-bezier(.18,.74,.81,1.09);
@@ -94,7 +91,7 @@
                         } 
                     } 
                 }
-           
+    /* button content */       
             &__flexcontent {
                 @include positionButtonMenu;
                 width:100%;

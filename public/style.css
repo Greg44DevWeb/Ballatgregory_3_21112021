@@ -8,7 +8,7 @@
 /* radius */
 /* font-size */
 /* Rotation Degrees */
-/*TEST RESPONSIVE */
+/* RESPONSIVE BREKPOINT */
 /* Flex Format PreStyle*/
 /* Title Menu Style */
 /* Process step stlye */
@@ -155,6 +155,7 @@ ul {
   transition: 0.3s;
 }
 
+/* PROCESS PANEL */
 #processus {
   width: 100%;
   height: auto;
@@ -164,6 +165,7 @@ ul {
   align-items: center;
 }
 
+/* PROCESS STEPS STYLE */
 .process {
   width: 90%;
   height: auto;
@@ -213,33 +215,6 @@ ul {
   font-size: 1.2rem;
 }
 .process__content {
-  font-weight: bold;
-}
-
-.num {
-  position: relative;
-  font-weight: bold;
-  font-family: roboto;
-  font-size: 12px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #f5d6d6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icone {
-  color: #828585;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.content {
-  font-family: roboto;
   font-weight: bold;
 }
 
@@ -383,12 +358,14 @@ ul {
   margin-right: 5px;
 }
 
+/* haeder with logo */
 #fixed {
   width: 100%;
   height: 100%;
   position: fixed;
 }
 
+/* back arrow */
 .back {
   height: 50px;
   display: flex;
@@ -398,6 +375,7 @@ ul {
   position: absolute;
 }
 
+/* background image display */
 .page-header img {
   width: 100%;
   height: 500px;
@@ -405,6 +383,7 @@ ul {
   position: relative;
 }
 
+/* main container display*/
 .menu {
   position: absolute;
   width: 100%;
@@ -427,6 +406,7 @@ ul {
   justify-content: space-between;
 }
 
+/* Type of dishes titles with green underline */
 .menu-container {
   margin: 0 auto;
   width: 90%;
@@ -445,6 +425,7 @@ ul {
   background-color: #99E2D0;
 }
 
+/* button style & display */
 .list-items {
   opacity: 0;
   width: 100%;
@@ -453,6 +434,8 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   animation: apparition 1s ease-out forwards;
+  /* boucle for delay between the dishes containers */
+  /* button content */
 }
 .list-items--1 {
   animation-delay: 0.5s;
@@ -480,6 +463,7 @@ ul {
   cursor: pointer;
 }
 .list-items__button:hover .checkbox {
+  /* transition with check */
   transform-origin: right;
   width: 100px;
   transition: 0.6s cubic-bezier(0.18, 0.74, 0.81, 1.09);
@@ -581,6 +565,7 @@ ul {
   z-index: 500;
 }
 
+/* WRAPPER ANIMATION */
 @keyframes wrapper {
   0% {
     width: 100%;
@@ -617,6 +602,7 @@ ul {
   animation: loader 3s linear;
 }
 
+/*  CIRCLE ANIMATION */
 @keyframes loader {
   0% {
     transform: rotate(0deg) scale(1);
@@ -651,6 +637,7 @@ ul {
   }
 }
 @media screen and (min-width: 800px) {
+  /* Process setps display */
   #processus {
     display: flex;
     flex-direction: row;
@@ -710,6 +697,7 @@ ul {
     justify-content: space-around;
   }
 
+  /* fex Container with all Dishes */
   .flex-responsive {
     margin: 0 auto;
     width: 80%;
@@ -718,7 +706,7 @@ ul {
     flex-direction: row;
   }
   .flex-responsive .menu-container {
-    width: 400px;
+    width: 420px;
   }
 
   /* responsive For Footer Display */

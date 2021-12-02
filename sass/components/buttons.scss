@@ -6,10 +6,7 @@
     border-radius: 15px;
     background-color: $buttonBackground;
     box-shadow: $btn-shadow;
-   
-
 } 
-
 
 /* Explore Button*/
 @mixin btn-gradient {
@@ -22,6 +19,7 @@
     background:$background-gradient;
     box-shadow: $btn-shadow;
     color:$whiteBg;
+    
         &:hover {
             opacity:0.80;
             cursor:pointer; 
