@@ -50,7 +50,7 @@
     margin:0 15px;
     font-size: 1.3em;
 }
-
+/* Pics display in restaurants cards display*/
 @mixin restaurant-pic {
     width: 100%;
     max-height: 220px;
@@ -58,7 +58,7 @@
     border-top-left-radius: $cardRadius;
     border-top-right-radius: $cardRadius;
 }
-
+/* Shadow when hover with ligthen color background */
 @mixin boxShadowHover {
     box-shadow: $shadowHover;
     cursor:pointer;
@@ -66,17 +66,18 @@
     background-color: $secondaryLight;
 }
 
-
+/* menu Margin & padding preformatting */
 @mixin positionButtonMenu {
     margin:0;
     padding-left: 20px;
 }
+/* text menu formatting*/
 @mixin ellipse {
     overflow:hidden;
     white-space:nowrap;
     text-overflow: ellipsis;
 }
-
+/* underline for Type of dishes in menu */
 @mixin underline {
     content: "";
     display: block;
@@ -84,7 +85,7 @@
     height: 3px;
     background-color: $tertiaty;
 }
-
+/* Type of Dishes Title Style*/
 @mixin titleMenu {
     text-transform: uppercase;
     color:$color-text;

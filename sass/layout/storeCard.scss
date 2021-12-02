@@ -1,4 +1,5 @@
 .restaurant {
+    
     width: 100%;
     height: auto;
     margin:0 auto;
@@ -9,7 +10,7 @@
     
     &__wrapper {
         margin:0 auto;
-        width: 100%;
+        max-width: 600px;
         height: 100%;
         @include flex-format;
         flex-direction: column;
@@ -18,9 +19,11 @@
 
     &__container {
         width: 90%;
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-row-gap:20px;
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+       
+        
     }
     /* Restaurant card link */
     &__link {
@@ -29,30 +32,39 @@
         height: auto;
         background-color:$whiteBg;
         border-radius: 20px;
-        box-shadow: $btn-shadow;  
+        box-shadow: $btn-shadow; 
+        &:hover {
+           box-shadow: $shadowHover;
+           transition:$transitionduration;
+        } 
     }
-    /* "new" box display */
-    &__new {
-        @include flex-format;
-        margin-top: 20px;
-        width: 100px;
-        height: 35px;
-        position: absolute;
-        right:20%;
-        background-color:$tertiaty;
-        color:darken($color: $tertiaty, $amount: 30);
-        font-weight: bold;
-    }
+   
+   
     /* restaurant Identy Card */
     &__card {  
+        position: relative;
         margin-bottom: 20px;
         display:flex;
         flex-direction: column;
         height: auto;
-        min-width: 350px;;
-        img {
+        min-width: 350px;
+        & img {
             @include restaurant-pic;
+           
         } 
+        /* "New" box Display*/
+        &--new {
+           
+            @include flex-format;
+            margin-top: 20px;
+            right:20px;
+            width: 100px;
+            height: 35px;
+            position: absolute;
+            background-color:$tertiaty;
+            color:darken($color: $tertiaty, $amount: 30);
+            font-weight: bold;
+        }
        
     }
        
