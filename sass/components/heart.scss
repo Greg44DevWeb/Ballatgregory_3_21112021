@@ -15,7 +15,7 @@
     opacity:0;
         &:hover {   
             opacity:1;
-            transition:$shortduration; 
+            transition:map-get($durations, Heart);
             cursor:pointer; 
         }
     }

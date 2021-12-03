@@ -24,7 +24,7 @@
             opacity:0.80;
             cursor:pointer; 
             box-shadow:3px 3px 7px  grey;
-            transition:$transitionduration;      
+            transition:map-get($durations, ShadowHover);    
             }
 }
 

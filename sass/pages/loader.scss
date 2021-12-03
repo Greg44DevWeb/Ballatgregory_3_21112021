@@ -6,7 +6,7 @@
         @include flex-format;
         flex-direction: column;
         justify-content: center;
-        animation: wrapper $loaderDuration linear;
+        animation: wrapper map-get($durations, Loader) linear;
         visibility: hidden;
         z-index:500;
         
@@ -41,7 +41,7 @@
     border-top-color:$primary;
     border-bottom-color: $secondary;
     border-radius: 50%;
-    animation: loader $loaderDuration linear;  
+    animation: loader map-get($durations, Loader) linear;  
 }
 /*  CIRCLE ANIMATION */
 @keyframes loader {

@@ -3,10 +3,7 @@
 /* Background for Button panel and menus*/
 /* basic background color for Index Sections and Menu Containers*/
 /* grandient color for Explore and command button */
-/* Animations Durations */
-/* delay between blocks menus*/
 /* Menu sections*/
-/* radius */
 /* font-size */
 /* Rotation Degrees */
 /* RESPONSIVE BREKPOINT */
@@ -21,6 +18,7 @@
 /* text menu formatting*/
 /* underline for Type of dishes in menu */
 /* Type of Dishes Title Style*/
+/* RADIUS MAP */
 /* GENERAL RULES*/
 body {
   box-sizing: border-box;
@@ -72,7 +70,7 @@ ul {
 }
 .full:hover {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.3s;
   cursor: pointer;
 }
 
@@ -488,7 +486,7 @@ ul {
 .list-items__button:hover .checkbox i {
   color: white;
   transform: rotate(720deg);
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease-in-out;
 }
 .list-items__flexcontent {
   margin: 0;
@@ -697,7 +695,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 1000px;
-    height: 800px;
+    height: 100%;
     column-gap: 40px;
   }
   .restaurant__container {
@@ -708,6 +706,7 @@ ul {
   .menu {
     position: relative;
     width: 90%;
+    height: 100%;
     margin: 0 auto;
     transform: translateY(340px);
   }

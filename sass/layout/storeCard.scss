@@ -33,11 +33,11 @@
         width: 100%;
         height: auto;
         background-color:$whiteBg;
-        border-radius: 20px;
+        border-radius: map-get($border-radius, Card);
         box-shadow: $btn-shadow; 
         &:hover {
            box-shadow: $shadowHover;
-           transition:$transitionduration;
+           transition:map-get($durations, ShadowHover);
         } 
     }
    
@@ -62,7 +62,7 @@
             right:20px;
             width: 100px;
             height: 35px;
-            border-radius: $newBox;
+            border-radius: map-get($border-radius, boxNew);
             position: absolute;
             background-color:$tertiaty;
             color:darken($color: $tertiaty, $amount: 30);

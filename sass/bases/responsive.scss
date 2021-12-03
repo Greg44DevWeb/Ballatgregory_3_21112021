@@ -40,7 +40,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 1000px;
-        height: 800px;
+        height: 100%;
         column-gap: 40px;
         }
     &__container {
@@ -52,12 +52,13 @@
 .menu {
     position: relative;
     width: 90%;
+    height:100% ;
     margin:0 auto;
     transform:translateY(340px);
     &__header {
         margin-top: 10px;
         justify-content: space-around;
-    }
+    }  
 } 
 /* fex Container with all Dishes */
 .flex-responsive {

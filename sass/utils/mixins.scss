@@ -17,14 +17,14 @@
         margin-bottom: 20px;
         width: 50%;
         padding-right: 70px;
-        border-radius: 15px;
+        border-radius: map-get($border-radius, Button);
         box-shadow: $btn-shadow;
         cursor:pointer;
         position: relative;
         &:hover {
             background: lighten($color: $primary, $amount: 35%);
             opacity:0.8;
-            transition:0.3s ease-in;
+            transition:map-get($durations, Steps) ease-in;
             box-shadow:2px 5px 10px grey;   
         }
 }
@@ -33,7 +33,7 @@
     @include flex-format;
     width: 25px;
     height: 25px;
-    border-radius: 50%;
+    border-radius: map-get($border-radius, CircleButton);
     background-color: $primary;
     color: white;
     font-size: 12px;
@@ -55,14 +55,14 @@
     width:100%;
     max-height: 220px;
     object-fit: cover;
-    border-top-left-radius: $cardRadius;
-    border-top-right-radius: $cardRadius;
+    border-top-left-radius: map-get($border-radius, Card);
+    border-top-right-radius: map-get($border-radius, Card);
 }
 /* Shadow when hover with ligthen color background */
 @mixin boxShadowHover {
     box-shadow: $shadowHover;
     cursor:pointer;
-    transition:$transitionduration;
+    transition:map-get($durations, ShadowHover);
     background-color: $secondaryLight;
 }
 
