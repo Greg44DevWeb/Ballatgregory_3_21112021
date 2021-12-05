@@ -137,7 +137,7 @@
     border-bottom-right-radius: map-get($border-radius, Button);
     & i {
         color:transparent;
-        font-size: $checkIcon;
+        font-size: map-get($font-sizes, CheckIcon);
     }
     
 }
@@ -148,6 +148,8 @@
     @include flex-format;
     &__btn-gradient {
         @include btn-gradient;
+        font-size: map-get($font-sizes, GradientButton);
+        font-weight: bold;
     }
 }
 

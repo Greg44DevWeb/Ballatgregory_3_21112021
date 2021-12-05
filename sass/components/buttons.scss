@@ -11,7 +11,7 @@
 /* Explore Button*/
 @mixin btn-gradient {
     margin:20px 0;
-    border-radius: 30px;
+    border-radius: map-get($border-radius, RestSection);
     width: auto;
     padding:0 20px;
     height: 50px;
@@ -20,10 +20,11 @@
     box-shadow: $btn-shadow;
     color:$whiteBg;
     
+    
         &:hover {
             opacity:0.80;
             cursor:pointer; 
-            box-shadow:3px 3px 7px  grey;
+            box-shadow:3px 3px 7px 3px  grey;
             transition:map-get($durations, ShadowHover);    
             }
 }

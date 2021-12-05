@@ -13,7 +13,7 @@
             & i {margin:0 10px;}
 /* input field formatting */
             & input {
-                width: 100px;
+                width: 120px;
                 border:none;
                 outline:none;
                 background-color: transparent;
@@ -21,10 +21,11 @@
                 font-family: roboto;
                 &::placeholder {
                     color:black;
-                    
+                    font-size: map-get($font-sizes, Paragraph); 
+                    opacity:1;
+                   
                 }
             
             }
-        }
-        
+        }     
 }

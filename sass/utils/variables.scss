@@ -15,7 +15,7 @@ $shadowHover: 2px 4px 8px 3px $color-text;
 $buttonBackground:rgb(247, 248, 248);
 
 /* basic background color for Index Sections and Menu Containers*/
-$background-section:lighten($color: rgb(223, 223, 223), $amount: 10);
+$background-section:lighten($color: rgb(223, 223, 223), $amount: 10%);
 
 /* grandient color for Explore and command button */
 $background-gradient:linear-gradient( 170deg,rgb(255, 121, 218),rgb(147, 86, 220));
@@ -25,15 +25,12 @@ $background-gradient:linear-gradient( 170deg,rgb(255, 121, 218),rgb(147, 86, 220
 $items:3;
 
 
-/* font-size */
-$checkIcon:24px;
 
 /* Rotation Degrees */
 $rotateDeg:720deg;
 
 
 /* RESPONSIVE BREKPOINT */
-
 $mediumScreen:800px;
 
 

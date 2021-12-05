@@ -6,6 +6,8 @@
 
     &__heading {
         width: 90%;
+        font-weight: bold;
+        font-size: map-get($font-sizes, SectionHeading);
     }
     
     &__wrapper {

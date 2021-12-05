@@ -1,11 +1,18 @@
 @media screen and (min-width:$mediumScreen) {
-/* Process setps display */    
+/* Loader */
+
+.t {
+        font-size: map-get($font-sizes, LoaderTextResponsive);
+    }
+
+
+    /* Process setps display */    
     #processus {
         display:flex;
         flex-direction: row;
         
         & .process{
-            width:70%;
+            
             margin:0 auto;
             margin-bottom: 50px;
             display:flex;

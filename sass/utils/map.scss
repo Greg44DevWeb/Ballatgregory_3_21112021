@@ -9,13 +9,29 @@ $border-radius: (
     RestSection:30px
     );
 
+/* DURATIONS FOR TRANSISITIONS / ANIMATIONS / HOVER EFFECT MAP */
 $durations: (
+    LinkHover:0.3s,
     ShadowHover:0.3s,
     Heart:0.3s,
     Steps:0.3s,
     AnimDelay:0.5s,
     CheckButton:0.6s,
     Apparition:1s,
-    Loader:2s
-)
+    Loader:3s
+);
 
+/* FONT-SIZES MAP */ 
+$font-sizes: (
+    NumberProcess:12px,
+    ProcessHeading:26px,
+    ProcessSecondary:22px,
+    Paragraph:16px,
+    MenuItem:18px,
+    GradientButton:16px,
+    IconProcess:20px,
+    SectionHeading:22px, 
+    CheckIcon:24px,
+    LoaderText:30px,
+    LoaderTextResponsive:60px
+);
