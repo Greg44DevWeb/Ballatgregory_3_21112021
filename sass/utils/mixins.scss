@@ -34,8 +34,8 @@
     width: 25px;
     height: 25px;
     border-radius: map-get($border-radius, CircleButton);
-    background-color: $primary;
-    color: white;
+    background-color: map-get($Palette, Primary);
+    color: map-get($Palette, GradientButtonText);
     font-size: map-get($font-sizes, NumberProcess);
     font-weight: bold;
     position: relative;
@@ -46,7 +46,7 @@
     width: 20px;
     @include flex-format;
     position:relative;
-    color:$color-text;
+    color:map-get($Palette, GreyText);
     margin:0 15px;
     font-size: map-get($font-sizes, IconProcess);
 }
@@ -83,7 +83,7 @@
     display: block;
     width: 40px;
     height: 3px;
-    background-color: $tertiaty;
+    background-color: map-get($Palette, Tertiary);
 }
 /* Type of Dishes Title Style*/
 @mixin titleMenu {

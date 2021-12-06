@@ -18,7 +18,7 @@
     border:none;
     background:$background-gradient;
     box-shadow: $btn-shadow;
-    color:$whiteBg;
+    color:map-get($Palette, GradientButtonText);
     
     
         &:hover {

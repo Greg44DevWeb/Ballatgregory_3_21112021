@@ -25,7 +25,8 @@
             align-items: center;
             &:hover {
                 @include boxShadowHover;
-                & i {color:$primary;}
+                & i {color:map-get($Palette, Primary);
+                }
             }                    
     }
 
@@ -36,7 +37,7 @@
 
         &__icon {
             margin:0 20px;
-            color:$color-text;
+            color:map-get($Palette, GreyText);
             font-size:1.2rem;
         }
         

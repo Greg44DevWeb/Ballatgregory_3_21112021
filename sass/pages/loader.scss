@@ -15,14 +15,14 @@
         width: 100vw;
         height:100vh;
         @include flex-format;
-        background-color:$whiteBg;
+        background-color:map-get($Palette, BGWhite);
         }
     }
 
         .t {
             font-family: Shrikhand;
             font-size: map-get($font-sizes, LoaderText);
-            color: $primary;
+            color: map-get($Palette, Primary);
             letter-spacing: 15px;
             opacity: 0;
             animation:LoaderText map-get($durations, Loader) linear;
@@ -78,7 +78,7 @@
 
 @keyframes LoaderText {
     0% {
-        color:$secondary;
+        color:map-get($Palette, Secondary);
         text-shadow: 0 0 7px 2px $secondary; 
     }
 
@@ -87,17 +87,17 @@
     }
 
     50% {
-        color:$tertiaty;
+        color:map-get($Palette, Tertiary);
         text-shadow: $tertiaty; 
     }
 
     90% {
-       color:$primary;
+       color:map-get($Palette, Primary);
        text-shadow: none;
     }
 
     100% {
-        color:$secondary;
+        color:map-get($Palette, Secondary);
         text-shadow: 0 0 7px 2px $secondary;
         opacity:1;    
     }

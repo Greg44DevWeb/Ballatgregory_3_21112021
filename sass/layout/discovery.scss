@@ -24,7 +24,7 @@
 .discovery
    button {
     @include btn-gradient;
-    color:$whiteBg;
+    color:map-get($Palette, GradientButtonText);
     font-weight:bold;
     font-size: map-get($font-sizes, GradientButton);
    }

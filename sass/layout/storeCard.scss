@@ -66,7 +66,7 @@
             height: 35px;
             border-radius: map-get($border-radius, boxNew);
             position: absolute;
-            background-color:$tertiaty;
+            background-color:map-get($Palette, Tertiary);
             color:darken($color: $tertiaty, $amount: 30);
             font-weight: bold;
         }

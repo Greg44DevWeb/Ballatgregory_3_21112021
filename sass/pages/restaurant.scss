@@ -87,7 +87,7 @@
                         map-get($durations, CheckButton) 
                         cubic-bezier(.18,.74,.81,1.09);
                         & i {
-                            color:white;
+                            color:map-get($Palette, BGWhite);
                             transform:rotate($rotateDeg);
                             transition: all 
                             map-get($durations, CheckButton) 
@@ -112,7 +112,7 @@
                         &--underline {
                             max-width: 90%;
                             margin:0;
-                            color:$color-text;
+                            color:map-get($Palette, GreyText);
                             @include ellipse;
                         }
                             &--price {
@@ -132,7 +132,7 @@
     width: 0;
     height: 100%;
     @include flex-format;
-    background-color: $tertiaty;
+    background-color: map-get($Palette, Tertiary);
     border-top-right-radius:map-get($border-radius, Button);
     border-bottom-right-radius: map-get($border-radius, Button);
     & i {

@@ -20,12 +20,10 @@
                 font-weight: bold;
                 font-family: roboto;
                 &::placeholder {
-                    color:black;
+                    color:map-get($Palette, Input);
                     font-size: map-get($font-sizes, Paragraph); 
                     opacity:1;
-                   
                 }
-            
             }
         }     
 }

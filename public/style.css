@@ -1,4 +1,4 @@
-/* Fonts Color*/
+/* GLOBAL VARIABLES*/
 /* Button and boxes shadows*/
 /* Background for Button panel and menus*/
 /* basic background color for Index Sections and Menu Containers*/
@@ -20,6 +20,7 @@
 /* RADIUS MAP */
 /* DURATIONS FOR TRANSISITIONS / ANIMATIONS / HOVER EFFECT MAP */
 /* FONT-SIZES MAP */
+/* MAIN COLORS PALETTE */
 /* GENERAL RULES*/
 body {
   box-sizing: border-box;
@@ -128,7 +129,7 @@ ul {
   font-family: roboto;
 }
 .main__localisation input::placeholder {
-  color: black;
+  color: #000000;
   font-size: 16px;
   opacity: 1;
 }
@@ -231,7 +232,7 @@ ul {
   height: 25px;
   border-radius: 50%;
   background-color: #9356DC;
-  color: white;
+  color: #fff;
   font-size: 12px;
   font-weight: bold;
   position: relative;
@@ -369,7 +370,7 @@ ul {
   flex-direction: column;
   align-items: center;
   background-color: #404040;
-  color: white;
+  color: #fff;
 }
 .footer a {
   color: white;
@@ -504,7 +505,7 @@ ul {
   transition: 0.6s cubic-bezier(0.18, 0.74, 0.81, 1.09);
 }
 .list-items__button:hover .checkbox i {
-  color: white;
+  color: #fff;
   transform: rotate(720deg);
   transition: all 0.6s ease-in-out;
 }
