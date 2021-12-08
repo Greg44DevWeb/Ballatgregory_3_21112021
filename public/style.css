@@ -1,11 +1,14 @@
 /* GLOBAL VARIABLES*/
 /* Button and boxes shadows*/
-/* Background for Button panel and menus*/
-/* basic background color for Index Sections and Menu Containers*/
 /* grandient color for Explore and command button */
 /* Menu sections*/
 /* Rotation Degrees */
 /* RESPONSIVE BREKPOINT */
+/* RADIUS MAP */
+/* DURATIONS FOR TRANSISITIONS / ANIMATIONS / HOVER EFFECT MAP */
+/* FONT-SIZES MAP */
+/* MAIN COLORS PALETTE */
+/* COLORS PALETTE */
 /* Flex Format PreStyle*/
 /* Title Menu Style */
 /* Process step stlye */
@@ -17,10 +20,6 @@
 /* text menu formatting*/
 /* underline for Type of dishes in menu */
 /* Type of Dishes Title Style*/
-/* RADIUS MAP */
-/* DURATIONS FOR TRANSISITIONS / ANIMATIONS / HOVER EFFECT MAP */
-/* FONT-SIZES MAP */
-/* MAIN COLORS PALETTE */
 /* GENERAL RULES*/
 body {
   box-sizing: border-box;
@@ -114,7 +113,7 @@ ul {
   align-items: center;
   font-weight: bold;
   font-size: 16px;
-  background-color: #dfdfdf;
+  background-color: #dbd7d7;
   /* input field formatting */
 }
 .main__localisation i {
@@ -143,7 +142,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
   flex-direction: column;
   text-align: center;
 }
@@ -207,7 +206,7 @@ ul {
   width: 100%;
   height: 60px;
   border-radius: 15px;
-  background-color: #f7f8f8;
+  background-color: #f7f7f7;
   box-shadow: 2px 4px 8px #b1afaf;
   display: flex;
   flex-direction: row;
@@ -221,7 +220,7 @@ ul {
   background-color: #fff9fd;
 }
 .process__button:hover i {
-  color: #9356DC;
+  color: #9256dc;
 }
 .process__number {
   transform: translateX(-50%);
@@ -231,7 +230,7 @@ ul {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #9356DC;
+  background-color: #9256dc;
   color: #fff;
   font-size: 12px;
   font-weight: bold;
@@ -271,7 +270,7 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
 }
 .restaurant__container {
   width: 90%;
@@ -319,7 +318,7 @@ ul {
   border-radius: 5px;
   position: absolute;
   background-color: #99E2D0;
-  color: #32b091;
+  color: #31af90;
   font-weight: bold;
 }
 .restaurant__description {
@@ -369,11 +368,11 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #404040;
+  background-color: #000000;
   color: #fff;
 }
 .footer a {
-  color: white;
+  color: #fff;
 }
 .footer a:hover {
   text-decoration: underline;
@@ -426,7 +425,7 @@ ul {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   transform: translateY(35%);
-  background-color: #f9f9f9;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
 }
@@ -487,7 +486,7 @@ ul {
   width: 100%;
   height: 60px;
   border-radius: 15px;
-  background-color: #f7f8f8;
+  background-color: #f7f7f7;
   box-shadow: 2px 4px 8px #b1afaf;
   display: flex;
   justify-content: center;
@@ -615,43 +614,40 @@ ul {
 .t {
   font-family: Shrikhand;
   font-size: 30px;
-  color: #9356DC;
+  color: #9256dc;
   letter-spacing: 15px;
   opacity: 0;
   animation: LoaderText 3s linear;
 }
 .t:nth-child(1) {
-  animation-delay: 0.02s;
+  animation-delay: 0.05s;
 }
 .t:nth-child(2) {
-  animation-delay: 0.04s;
-}
-.t:nth-child(3) {
-  animation-delay: 0.06s;
-}
-.t:nth-child(4) {
-  animation-delay: 0.08s;
-}
-.t:nth-child(5) {
   animation-delay: 0.1s;
 }
-.t:nth-child(6) {
-  animation-delay: 0.12s;
+.t:nth-child(3) {
+  animation-delay: 0.15s;
 }
-.t:nth-child(7) {
-  animation-delay: 0.14s;
-}
-.t:nth-child(8) {
-  animation-delay: 0.16s;
-}
-.t:nth-child(9) {
-  animation-delay: 0.18s;
-}
-.t:nth-child(10) {
+.t:nth-child(4) {
   animation-delay: 0.2s;
 }
-.t:nth-child(11) {
-  animation-delay: 0.22s;
+.t:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.t:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.t:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.t:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.t:nth-child(9) {
+  animation-delay: 0.45s;
+}
+.t:nth-child(10) {
+  animation-delay: 0.5s;
 }
 
 /* WRAPPER ANIMATION */
@@ -666,7 +662,7 @@ ul {
 @keyframes LoaderText {
   0% {
     color: #FF79DA;
-    text-shadow: 0 0 7px 2px #FF79DA;
+    text-shadow: 0 0 7px 2px #ff7ad9;
   }
   25% {
     opacity: 1;
@@ -676,12 +672,12 @@ ul {
     text-shadow: #99E2D0;
   }
   90% {
-    color: #9356DC;
-    text-shadow: none;
+    color: #9256dc;
+    text-shadow: #9256dc;
   }
   100% {
     color: #FF79DA;
-    text-shadow: 0 0 7px 2px #FF79DA;
+    text-shadow: 0 0 7px 2px #ff7ad9;
     opacity: 1;
   }
 }
@@ -730,7 +726,7 @@ ul {
   .restaurant {
     width: 100%;
     margin: 0 auto;
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
   }
   .restaurant__heading {
     display: flex;
@@ -764,9 +760,12 @@ ul {
   }
 
   /* fex Container with all Dishes */
+  /* responsive For Footer Display */
+}
+@media screen and (min-width: 800px) and (min-width: 1000px) {
   .flex-responsive {
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -774,8 +773,8 @@ ul {
   .flex-responsive .menu-container {
     width: 420px;
   }
-
-  /* responsive For Footer Display */
+}
+@media screen and (min-width: 800px) {
   .footer__links {
     width: 100%;
     height: 80px;

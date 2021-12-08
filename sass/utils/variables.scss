@@ -1,36 +1,25 @@
 /* GLOBAL VARIABLES*/
 
-$primary: #9356DC;
-$secondary: #FF79DA;
-$secondaryLight:lighten($secondary, 25%);
-$tertiaty: #99E2D0;
-$color-text: rgb(177, 175, 175);
+$primary: hsl(267, 66%, 60%);
+$secondary: hsl(317, 100%, 74%);
+$tertiaty: hsl(165, 56%, 74%);
 $whiteBg:#fff;
 
 /* Button and boxes shadows*/
-$btn-shadow: 2px 4px 8px $color-text;
-$shadowHover: 2px 4px 8px 3px $color-text;
-
-/* Background for Button panel and menus*/
-$buttonBackground:rgb(247, 248, 248);
-
-/* basic background color for Index Sections and Menu Containers*/
-$background-section:lighten($color: rgb(223, 223, 223), $amount: 10%);
+$btn-shadow: 2px 4px 8px rgb(177, 175, 175);
+$shadowHover: 2px 4px 8px 3px rgb(177, 175, 175);
 
 /* grandient color for Explore and command button */
 $background-gradient:linear-gradient( 170deg,rgb(255, 121, 218),rgb(147, 86, 220));
 
-
 /* Menu sections*/
 $items:3;
-
-
 
 /* Rotation Degrees */
 $rotateDeg:720deg;
 
-
 /* RESPONSIVE BREKPOINT */
 $mediumScreen:800px;
+$largeScreen:1000px;
 
 

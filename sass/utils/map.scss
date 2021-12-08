@@ -38,12 +38,21 @@ $font-sizes: (
 
 /* MAIN COLORS PALETTE */
 $Palette: (
-    Primary: #9356DC,
+    Primary: #9256dc,
     Secondary: #FF79DA,
+    SecondaryLighten:#fffafe,
+    ProcessButtonHover:#d6c0f2,
     Tertiary: #99E2D0,
-    GreyText: rgb(177, 175, 175),
+    NewBoxText:#31af90,
+    GreyText: #b1afaf,
+    LocalisationSection: #dbd7d7,
+    BackgroundSection: #f7f7f7,
+    ProcessButtonBG: #f7f7f7,
     BGWhite: #fff,
     GradientButtonText: #fff,
     FooterLinks:#fff,
+    FooterBg:#000000,
     Input: #000000
-)
+);
+
+

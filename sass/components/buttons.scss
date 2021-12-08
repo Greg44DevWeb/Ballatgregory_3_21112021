@@ -4,7 +4,7 @@
     width:100%;
     height:60px;
     border-radius: 15px;
-    background-color: $buttonBackground;
+    background-color: colors(ProcessButtonBG);
     box-shadow: $btn-shadow;
 } 
 
@@ -18,7 +18,7 @@
     border:none;
     background:$background-gradient;
     box-shadow: $btn-shadow;
-    color:map-get($Palette, GradientButtonText);
+    color: colors(GradientButtonText);
     
     
         &:hover {

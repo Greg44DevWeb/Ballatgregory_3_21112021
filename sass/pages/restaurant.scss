@@ -28,7 +28,7 @@
     border-top-left-radius: map-get($border-radius, RestSection);
     border-top-right-radius: map-get($border-radius, RestSection);
     transform:translateY(35%);
-    background-color: $background-section;
+    background-color: colors(BackgroundSection);
     display: flex;
     flex-direction: column;
         &__header {
@@ -87,7 +87,7 @@
                         map-get($durations, CheckButton) 
                         cubic-bezier(.18,.74,.81,1.09);
                         & i {
-                            color:map-get($Palette, BGWhite);
+                            color:colors(BGWhite);
                             transform:rotate($rotateDeg);
                             transition: all 
                             map-get($durations, CheckButton) 
@@ -112,7 +112,7 @@
                         &--underline {
                             max-width: 90%;
                             margin:0;
-                            color:map-get($Palette, GreyText);
+                            color:colors(GreyText);
                             @include ellipse;
                         }
                             &--price {
@@ -121,8 +121,6 @@
                                 padding-right: 20px;
                                 overflow:visible;
                             }
-
-           
                      }
         }
 
@@ -132,7 +130,7 @@
     width: 0;
     height: 100%;
     @include flex-format;
-    background-color: map-get($Palette, Tertiary);
+    background-color: colors(Tertiary);
     border-top-right-radius:map-get($border-radius, Button);
     border-bottom-right-radius: map-get($border-radius, Button);
     & i {

@@ -1,0 +1,11 @@
+/* COLORS PALETTE */
+@function colors($Value)
+    {
+    @if map-has-key($Palette, $Value)
+    {
+        @return map-get($Palette, $Value);
+    }
+    @warn "no key#{$Value} in the map" "$Palette";
+    @return null;
+}
+

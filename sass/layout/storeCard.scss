@@ -16,7 +16,7 @@
         height: 100%;
         @include flex-format;
         flex-direction: column;
-        background-color: $background-section;
+        background-color: colors(BackgroundSection);
     }
 
     &__container {
@@ -34,7 +34,7 @@
         margin:15px auto;
         width: 100%;
         height: auto;
-        background-color:$whiteBg;
+        background-color:colors(BGWhite);
         border-radius: map-get($border-radius, Card);
         box-shadow: $btn-shadow; 
         &:hover {
@@ -66,8 +66,8 @@
             height: 35px;
             border-radius: map-get($border-radius, boxNew);
             position: absolute;
-            background-color:map-get($Palette, Tertiary);
-            color:darken($color: $tertiaty, $amount: 30);
+            background-color:colors(Tertiary);
+            color:colors(NewBoxText);
             font-weight: bold;
         }
        

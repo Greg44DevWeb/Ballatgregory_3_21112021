@@ -37,7 +37,7 @@
 .restaurant {
     width: 100%;
     margin:0 auto;
-    background-color: $background-section;
+    background-color: colors(BackgroundSection);
     &__heading {
         @include flex-format;
         margin-bottom: 0;
@@ -69,14 +69,16 @@
 } 
 /* fex Container with all Dishes */
 .flex-responsive {
+    @media screen and (min-width:$largeScreen) {
     margin:0 auto;
-    width: 80%;
+    width: 90%;
     height: auto;
     display:flex;
     flex-direction: row;
     & .menu-container {
         width: 420px;
     }
+}
 }
 /* responsive For Footer Display */
 .footer {

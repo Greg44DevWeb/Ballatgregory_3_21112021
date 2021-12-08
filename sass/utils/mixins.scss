@@ -22,7 +22,7 @@
         cursor:pointer;
         position: relative;
         &:hover {
-            background: lighten($color: $primary, $amount: 35%);
+            background: colors(ProcessButtonHover);
             opacity:0.8;
             transition:map-get($durations, Steps) ease-in;
             box-shadow:2px 5px 10px grey;   
@@ -34,8 +34,8 @@
     width: 25px;
     height: 25px;
     border-radius: map-get($border-radius, CircleButton);
-    background-color: map-get($Palette, Primary);
-    color: map-get($Palette, GradientButtonText);
+    background-color:colors(Primary);
+    color: colors(GradientButtonText);
     font-size: map-get($font-sizes, NumberProcess);
     font-weight: bold;
     position: relative;
@@ -46,7 +46,7 @@
     width: 20px;
     @include flex-format;
     position:relative;
-    color:map-get($Palette, GreyText);
+    color:colors(GreyText);
     margin:0 15px;
     font-size: map-get($font-sizes, IconProcess);
 }
@@ -63,7 +63,7 @@
     box-shadow: $shadowHover;
     cursor:pointer;
     transition:map-get($durations, ShadowHover);
-    background-color: $secondaryLight;
+    background-color: lighten(colors(Secondary), 25%);
 }
 
 /* menu Margin & padding preformatting */
@@ -83,7 +83,7 @@
     display: block;
     width: 40px;
     height: 3px;
-    background-color: map-get($Palette, Tertiary);
+    background-color: colors(Tertiary);
 }
 /* Type of Dishes Title Style*/
 @mixin titleMenu {

@@ -13,15 +13,15 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: lighten($color: #000000, $amount: 25%);
-            color:map-get($Palette, FooterLinks);
+            background-color: colors(FooterBg);
+            color:colors(FooterLinks);
             }
 
         & a {
-            color:white;
+            color:colors(FooterLinks);
                 &:hover {
                     text-decoration: underline;
-                    transition:map-get($durations, LinkHover);
+                    transition:map-get($durations, 'LinkHover');
                 }   
         }
 
