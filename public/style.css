@@ -662,22 +662,18 @@ ul {
 @keyframes LoaderText {
   0% {
     color: #FF79DA;
-    text-shadow: 0 0 7px 2px #ff7ad9;
   }
   25% {
     opacity: 1;
   }
   50% {
     color: #99E2D0;
-    text-shadow: #99E2D0;
   }
   90% {
     color: #9256dc;
-    text-shadow: #9256dc;
   }
   100% {
     color: #FF79DA;
-    text-shadow: 0 0 7px 2px #ff7ad9;
     opacity: 1;
   }
 }

@@ -46,7 +46,7 @@
 @keyframes LoaderText {
     0% {
         color:colors(Secondary);
-        text-shadow: 0 0 7px 2px $secondary; 
+        
     }
 
     25% {
@@ -55,17 +55,17 @@
 
     50% {
         color:colors(Tertiary);
-        text-shadow:colors(Tertiary); 
+         
     }
 
     90% {
        color:colors(Primary);
-       text-shadow:colors(Primary);
+       
     }
 
     100% {
         color:colors(Secondary);
-        text-shadow: 0 0 7px 2px $secondary;
+        
         opacity:1;    
     }
 }
