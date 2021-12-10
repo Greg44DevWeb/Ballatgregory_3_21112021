@@ -79,6 +79,10 @@ ul {
   transition: 0.3s;
   cursor: pointer;
 }
+.full:hover:visited {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* Logo */
 .header {
@@ -256,6 +260,13 @@ ul {
   /* First line with the bold-style name */
   /* Second line with the locality*/
   /* "Like" section */
+  /*   &__like {
+                 @include flex-format;
+                 width: 30px;
+                 padding-right: 20px;                 
+
+
+             } */
 }
 .restaurant__heading {
   width: 90%;
@@ -344,12 +355,8 @@ ul {
 .restaurant__location {
   margin: 0;
 }
-.restaurant__like {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  padding-right: 20px;
+.restaurant svg {
+  z-index: 100;
 }
 
 .footer {
@@ -600,6 +607,7 @@ ul {
   animation: wrapper 3s linear;
   visibility: hidden;
   z-index: 500;
+  cursor: wait;
 }
 .loader__text {
   position: absolute;
@@ -648,6 +656,9 @@ ul {
 }
 .t:nth-child(10) {
   animation-delay: 0.5s;
+}
+.t:nth-child(11) {
+  animation-delay: 0.55s;
 }
 
 /* WRAPPER ANIMATION */

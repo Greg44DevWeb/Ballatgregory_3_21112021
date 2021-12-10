@@ -5,6 +5,7 @@
     right:20px;
     stroke:black; 
     fill:white;
+    
 
 }
 .full{
@@ -16,6 +17,12 @@
         &:hover {   
             opacity:1;
             transition:map-get($durations, Heart);
-            cursor:pointer; 
+            cursor:pointer;
+            
+            &:visited {
+                opacity:1;
+                visibility: visible;
+            } 
         }
+        
     }

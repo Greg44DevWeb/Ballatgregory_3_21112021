@@ -7,7 +7,8 @@
         background-color:$whiteBg;
         animation: wrapper map-get($durations, Loader) linear;
         visibility: hidden;
-        z-index:500;       
+        z-index:500;
+        cursor: wait;       
      
         &__text {
         position: absolute;
@@ -25,7 +26,7 @@
             letter-spacing: 15px;
             opacity: 0;
             animation:LoaderText map-get($durations, Loader) linear;
-            @for $i from 1 through 10 {
+            @for $i from 1 through 11 {
                 &:nth-child(#{$i}) {
                   animation-delay:(#{$i*0.05s}); 
                 }
